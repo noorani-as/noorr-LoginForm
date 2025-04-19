@@ -1,0 +1,236 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('imgg.jpg') no-repeat center center/cover;
+    flex-direction: column;
+
+}
+
+@keyframes fadeSlideIn {
+    0% {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.welcome-banner {
+    max-width: 420px;
+    margin: 30px auto 20px auto;
+    background: linear-gradient(135deg, #e0f7fa, #ffffff);
+    border-left: 5px solid #3268d4;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .welcome-banner h2 {
+    margin: 0 0 10px;
+    color:#3268d4;
+    font-size: 24px;
+  }
+  
+  .welcome-banner p {
+    margin: 0;
+    color: #555;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+
+.wrapper {
+    width: 100%;
+    max-width: 420px;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    border-radius: 15px;
+    padding: 40px 30px;
+    backdrop-filter: blur(12px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    animation: fadeSlideIn 1s ease forwards;
+}
+
+.wrapper h1 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.wrapper .input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin-bottom: 25px;
+}
+
+.wrapper .input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 40px;
+    font-size: 16px;
+    color: #fff;
+    padding: 0 20px 0 45px;
+    outline: none;
+    transition: border 0.3s ease;
+}
+
+.input-box input:focus {
+    border-color: #3f8efc;
+    box-shadow: 0 0 5px #3f8efc;
+}
+.input-box input::placeholder {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.input-box i {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+}
+
+.remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 0; 
+}
+
+.remember-forgot label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.remember-forgot a {
+    color: rgba(107, 116, 245, 0.959);
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.remember-forgot a:hover {
+    text-decoration: underline;
+    color: #fff;
+
+}
+
+.wrapper .btn {
+    width: 100%;
+    height: 45px;
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+    color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    background: linear-gradient(to right, #0072ff, #00c6ff);
+}
+
+.register-link {
+    font-size: 14px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.register-link p a {
+    color: #add8e6;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.register-link p a:hover {
+    text-decoration: underline;
+    color: #fff;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+    .wrapper {
+        padding: 30px 20px;
+    }
+
+    .wrapper h1 {
+        font-size: 28px;
+    }
+
+    .input-box input {
+        font-size: 14px;
+    }
+
+    .btn {
+        font-size: 15px;
+    }
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: #0d1123;
+  }
+  
+  .container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 30px; 
+  }
+  
+  /* Footer Styles */
+.footer {
+    background-color: #1a1a2e;
+    color: #ccc;
+    text-align: center;
+    padding: 20px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 14px;
+    position: relative;
+    width: 100%;
+  }
+  
+  .footer p {
+    margin: 5px 0;
+  }
+  
+  .footer .social-icons {
+    margin-top: 8px;
+  }
+  
+  .footer .social-icons i {
+    margin: 0 10px;
+    color: #999;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .footer .social-icons i:hover {
+    color: #fff;
+  }
